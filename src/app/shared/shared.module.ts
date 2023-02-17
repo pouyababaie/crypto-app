@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WildCardComponent } from './components/wild-card/wild-card.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    WildCardComponent
+  ],
   imports: [
     CommonModule
   ]
