@@ -1,0 +1,9 @@
+li.nav-item {
+    
+    .nav-link {
+        transition: 0.2s ease-out;
+        &:hover {
+            color: orange;
+        }
+    }
+}

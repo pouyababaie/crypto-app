@@ -1,0 +1,14 @@
+.custom-hover{
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    border-left: 2px solid transparent;
+    &:hover:not(.active){
+        transform: scale(1.05);
+        border-left: 2px solid orange
+    }
+    .active {
+        transform: scale(1.05);
+        border-left: 2px solid orange;
+    }
+    
+}
