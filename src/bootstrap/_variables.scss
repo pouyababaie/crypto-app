@@ -706,6 +706,7 @@ $table-variants: (
   "danger":     shift-color($danger, $table-bg-scale),
   "light":      $light,
   "dark":       $dark,
+  "orange":     shift-color($orange,$table-bg-scale)
 ) !default;
 // scss-docs-end table-loop
 

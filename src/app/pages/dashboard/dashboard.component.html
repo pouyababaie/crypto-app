@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Banner -->
+        <div class="col-12 ">
+            <app-banner></app-banner>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12">
+                        <app-quick-wallet></app-quick-wallet>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>wallet</h6>
+                            <div class="p-2">
+                                <ng-container *ngFor="let item of [0,0,0]">
+                                    <div class="p-1 bg-danger rounded-pill m-1"></div>
+                                </ng-container>
+                            </div>
+                            <button class="btn btn-light">Manage Your Wallet</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <h3>You are in {{'bronze'}} league</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

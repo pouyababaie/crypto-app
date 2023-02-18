@@ -4,26 +4,22 @@ import { WildCardComponent } from './shared/components/wild-card/wild-card.compo
 
 const routes: Routes = [
   {
-    path: 'dashboard',
-    loadChildren: () => import('./pages/pages.module').then((m) => m.PagesModule)
+    path: '',
+    loadChildren: () =>
+      import('./pages/pages.module').then((m) => m.PagesModule),
   },
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule)
-  },
-  {
-    path: '',
-    redirectTo: 'dashboard',
-    pathMatch:'full'
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
     path: '**',
-    component: WildCardComponent
-  }
+    component: WildCardComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

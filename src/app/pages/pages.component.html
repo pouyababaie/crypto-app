@@ -1,13 +1,20 @@
-<main class="container-fluid">
+<header class="col-12">
+    <app-header class="fixed-top bg-light shadow-box-bottom"></app-header>
+</header>
+<main class="container-fluid custom-padding ">
     <div class="row">
-        <div class="col-12">
-            <app-header class="fixed-top"></app-header>
-        </div>
-        <div class="col-12">
-            <div class="col-4"></div>
-            <div class="col-8">
-                <router-outlet></router-outlet>
+        <div class="col-12 ">
+            <div class="row">
+                <div class="col-2 border-end border-danger pt-3 shadow-box-left">
+                    <app-side-nav></app-side-nav>
+                </div>
+                <div class="col-10 pt-3">
+                    <router-outlet></router-outlet>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="col-12 border-top">
+        <app-footer></app-footer>
     </div>
 </main>
